@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+header {
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 80px;
+    background-color: #f1ef42;
+}
+
+
+#logo_navegacion {
+    width: 110%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+#logo_navegacion img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+h1 {
+    text-transform: capitalize;
+
+    text-align: center;
+    margin: auto;
+}
+
+.barra_navegacion {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    /* place-items: center; */
+    
+}
+
+.menu {
+    /* margin: 10px 0px 0px 10px; */
+    display: grid;
+    grid-template-columns: repeat(5 , 15%);
+    grid-template-rows: 40px;
+    place-content: center;
+    /* place-items: center; */
+}
+
+.menu li {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+
+    display: grid;
+    place-items: center;
+    grid-template-rows: 40px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+}
+
+.menu li:hover {
+    background-color: rgb(233, 236, 16);
+}
+
+.menu li a:hover {
+    text-decoration: underline rgb(12, 12, 12);
+    /* color: rgb(255, 0, 0); */
+}
+
+.submenu {
+    visibility: hidden;
+    margin-top: 2px;
+    display: grid;
+    grid-template-rows: auto;
+    place-items: center;
+    width: 135%;
+    border-radius: 10px;
+    background-color: rgba(160, 159, 159, 0.644);
+    z-index: 999;
+}
+
+.submenu li {
+    width: 95%;
+    height: 100%;
+    text-align: center;
+    border-radius: 40px;
+    display: grid;
+    place-items: center;
+}
+
+.menu li:hover .submenu {
+    visibility: visible;
+}
+
+#muneco a {
+    display: grid;
+    place-items: center;
+}
+
+#usuarioNavegacion {
+    width: 60%;
+    height: 50%;
+    object-fit: contain;
+}
+
+/*fin navegación*/
+
+/*inicio cuerpo*/
+#slogPrincipal {
+    width: 95%;
+    height: 600px;
+    margin: 40px auto;
+    border-radius: 40px;
+    background-color: #f1ef42;
+    color: #0c0c0c;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+#blockInfo {
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    display: grid;
+    place-items: center;
+}
+
+#blockInfo h2 {
+    /* margin-top: 30px; */
+    font-size: 70px;
+    /* line-height: 1; */
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#blockInfo p {
+    margin-top: 50px;
+    font-size: 22px;
+    text-align: center;
+}
+
+#contenedorMinis {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+#contenedorMinis img {
+    width: 80px;
+}
+
+.minBlocksSlogan {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.blockImgs {
+    display: grid;
+    place-items: center;
+}
+
+.blockImgs img {
+    width: 100%;
+    height: 100%;
+    filter: invert(100%);
+}
+
+.textosBlock {
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+}
+
+#blockDatos {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+#formularioDeAutos {
+    width: 60%;
+    height: 70%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 10%;
+    display: grid;
+    grid-template-rows: 20% 20% 30% 20%;
+}
+
+#formularioDeAutos h3 {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    line-height: 0.8;
+}
+
+#tipoRevision {
+    margin: auto;
+}
+
+#selectRevision {
+    width: 350px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#selectRevision:hover {
+    cursor: pointer;
+}
+
+#bloquesSmall {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(2, 45%);
+    place-content: center;
+    place-items: center;
+    gap: 2%;
+}
+
+.opcionesRelleno {
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+#btonServicios {
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    background-color: #cccccc;
+    border-radius: 20px;
+    border: none;
+}
+
+#btonServicios:hover {
+    cursor: pointer;
+}
+/*formulario inicio de sesión*/
+
+.formulario {
+    width: 400px;
+    height: 500px;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    margin: 60px auto;
+
+    border: 2px solid rgb(14, 13, 13);
+    border-radius: 40px;
+
+    background-image: linear-gradient(to top, #fffcfc 10%, #ecea42 100%);
+}
+
+.formularios {
+    width: 400px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+}
+
+.cuadros {
+    width: 90;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    place-content: center;
+    place-items: center;
+}
+
+.cuadros input {
+    width: 100%;
+}
+
+.controls {
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    border-radius: 40px;
+
+    margin-top: 5px;
+}
+
+.btnSubmit {
+    margin-top: 20px;
+    width: 90px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid rgb(131, 131, 131);
+    background-color: #fff;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+    transition: 0.1s ease-in;
+}
+/*slider*/
+
+.slider {
+    position: relative;
+    width: 70%;
+    height: 450px;
+    margin: 50px auto;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+.slider .slider-container {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 1.2s ease;
+    transform: translateX(0);
+}
+.slider .slider-container .slider-item {
+    width: 100%;
+    height: 100%;
+}
+.slider .slider-container .slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.slider .slider-container .slider-item.active {
+    transform: translateX(-110%);
+}
+/* footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-rows: 100px;
+    background-color: #f1ef42;
+    place-items: center;
+}
+
+footer figure {
+    width: 100%;
+    height: 100%;
+}
+
+.iconoEmpresaFooter {
+    width: 100%;
+    height: 100%;
+}
+
+.bloquesFooter {
+    height: 100%;
+    text-align: center;
+}
+
+.bloquesRedes {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 60px;
+    text-align: center;
+}
+
+.redes {
+    width: 100%;
+    height: 100%;
+}
+
+.redes a {
+    width: 100%;
+    height: 100%;
+}
+
+.redes img {
+    width: 100%;
+    height: 100%;
+
+}
+/*catalogo*/
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartProductos {
+    display: grid;
+    width: 30%;
+    height: 350px;
+    grid-template-rows: 40% repeat(3,15%) 10%;
+    place-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cartProductos p {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.cartProductos img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cartProductos button {
+    width: 50%;
+    height: 100%;
+    border-radius: 40px;
+    margin: 10px auto;
+    border: none;
+    background-color: rgb(146, 245, 245);
+    text-transform: uppercase;
+}
+.cartProductos button:hover {
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgb(70, 245,222);
+    text-decoration: underline;
+    color: rgb(91, 114, 243);
+}
+
+/*mision y vision*/
+#ContentAbout {
+    width: 100%;
+    height: auto;
+}
+
+.imgAbout {
+    width: 80%;
+    height: 80%;
+}
+
+.blockAbout {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    place-items:center;
+    text-align: center;
+}
+
+.infoAbout {
+    display: grid;
+    grid-template-rows: repeat(2,50%);
+    width: 80%;
+}
+
+.infoAbout h2, #infoHistoria h2 {
+    font-size: 2rem;
+    font-weight: 3rem;
+}
+
+#colorBackground {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+#contentHistory {
+    height: auto;
+    display: grid;
+    grid-template-rows: 40%, 60%;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+#imgHistory {
+    width: 40%;
+    height: 40%;
+    margin: auto;
+}
+
+#infoHistory {
+    width: 80%;
+    display: grid;
+    grid-template-rows: repeat(2,40%);
+    place-content: center;
+    margin: 0 auto;
+}
+
+#infoHistory h2 {
+    text-transform: center;
+}

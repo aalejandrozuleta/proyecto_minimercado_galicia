@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <picture id="logo_navegacion">
+            <img src="../public/img/logo1.png.jpeg" alt="logo empresa" />
+        </picture>
+        <h1>Minimercado Galicia</h1>
+        <nav class="barra_navegacion">
+            <ul class="menu">
+                <li>
+                    <a href="#">inicio</a>
+                </li>
+                <li>
+                    <a href="#">Productos</a>
+                    <ul class="submenu">
+                        <li><a href="../views/catalogo 1.html">Lacteos y huevos</a></li>
+                        <li><a href="../views/catalogo 2.html">Carnes</a></li>
+                        <li><a href="../views/catalogo 3.html">Frutras y verduras</a></li>
+                        <li><a href="../views/catalogo 4.html">Bebidas</a></li>
+                        <li><a href="#">Productos de aseo</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../views/misionyvision.html">nosotros</a>
+                </li>
+                <li>
+                    <a href="#">historia</a>
+                </li>
+
+                <li id="muneco">
+                    <a href="#">
+                        <img
+                            id="usuarioNavegacion"
+                            src="../public/img/usuario.svg"
+                            alt="logo de usuario"
+                        />
+                    </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="../views/iniciar.html"
+                                >Iniciar Sesión</a
+                            >
+                        </li>
+                        <li><a href="../views/formularioRegistro.html">Registrarme</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+ <section class="formulario">
+    <h3>Formulario de Regristro</h3>
+    <form action="/registrar" method="post" class="formularios">
+        <div class="cuadros">
+            <input class="controls" type="text"placeholder="Nombre" required>
+            <input class="controls" type="text" placeholder="Apellido" required>
+        </div>
+        <input class="controls" type="email" placeholder="Correo" required>
+        <input class="controls" type="text" placeholder="Direccion" required>
+        <input class="controls" type="text" placeholder="Telefono" required>
+        <input class="controls" type="password" placeholder="Contraseña" required>
+        <input type="submit" value="iniciar" class="btnSubmit">
+    </form>
+    <a href="../views/iniciar.html">Ya tengo cuenta</a>
+ </section>
+</body>
+</html>
